@@ -64,6 +64,7 @@ changepassword(){
   this.http.post('http://localhost:9992/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
     (response: any)=>{
       console.log('Password changed successfully',response);
+      
     },
     (error)=>{
       console.log('Error changing password',error);
