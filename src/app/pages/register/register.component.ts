@@ -102,7 +102,7 @@ export class RegisterComponent {
       "password": this.password
     };
   
-    this.http.post("http://localhost:5000/student/create", bodyData, { responseType: 'text' })
+    this.http.post("http://pukar.aavhan.org/student/create", bodyData, { responseType: 'text' })
       .subscribe((resultData: any) => {
         console.log(resultData);
         this.finalres = JSON.parse(resultData)

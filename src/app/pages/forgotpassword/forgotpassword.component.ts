@@ -73,7 +73,7 @@ togglechangepasswoord(){
 changepassword(){
   console.log(this.newPassword);
   if(this.newPassword.trim()!==''){
-  this.http.post('http://localhost:5000/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
+  this.http.post('http://pukar.aavhan.org/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
     (response: any)=>{
       console.log('Password changed successfully',response);
       alert("Password changed successfully")

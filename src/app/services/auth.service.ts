@@ -13,7 +13,7 @@ export class AuthService {
   isLoggedIn:boolean=false;
 
   private jwtHelper: JwtHelperService = new JwtHelperService();
-  private backendUrl = 'http://localhost:5000'; // Replace with your backend URL
+  private backendUrl = 'http://pukar.aavhan.org'; // Replace with your backend URL
 
   constructor(private http: HttpClient) {}
   login(email: string, password: string): Observable<any> { // Expect two arguments
