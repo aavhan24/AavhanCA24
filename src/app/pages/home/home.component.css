@@ -126,6 +126,7 @@ body {
     border: 0.5px solid rgb(131, 124, 124);
     /* background/-image: url('../../../assets/intern.jpg'); */
     background-size: cover;
+    margin: 2px;
   }
 
   .heading:hover{
@@ -195,5 +196,14 @@ body {
   transform: translateY(-50%) rotate(-135deg);
 }
 @media (max-width: 767.98px) {
-  
+  .aboutaavhan{
+    display: flex;
+  }
+  .content{
+    padding: 0px;
+    margin: 0;
+  }
+  .iitbhm{
+    font-size: 13px;
+  }
 }

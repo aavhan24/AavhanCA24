@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { response } from 'express';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-forgotpassword',
@@ -13,7 +14,18 @@ export class ForgotpasswordComponent {
   generatedotp:string ='';
   email: string = '';
   enteredOTP:string='';
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private router: Router) {}
+
+  showPassword: boolean = false;
+
+  togglePasswordVisibility() {
+    this.showPassword = !this.showPassword;
+    const input = document.getElementById('password') as HTMLInputElement;
+    if (input) {
+      input.type = this.showPassword ? 'text' : 'password';
+    }
+  }
+
   sendotp() {
     console.log(this.email);
     
@@ -61,13 +73,17 @@ togglechangepasswoord(){
 changepassword(){
   console.log(this.newPassword);
   if(this.newPassword.trim()!==''){
-  this.http.post('http://localhost:9992/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
+  this.http.post('http://localhost:5000/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
     (response: any)=>{
       console.log('Password changed successfully',response);
+      alert("Password changed successfully")
+      this.router.navigate(['/profile']);
+
       
     },
     (error)=>{
       console.log('Error changing password',error);
+      alert("Error changing password");
     }
   
   );
