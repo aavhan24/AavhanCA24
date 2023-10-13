@@ -13,7 +13,14 @@ body {
     padding: 20px;
     /* height: 600px; */
   }
-  
+  .firstname{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .referralcode{
+    font-weight: 600;
+    font-size: 18px;
+  }
   .profile {
     text-align: center;
   }
@@ -52,12 +59,12 @@ body {
     display: flex;
   }
   
-  .sidebar {
-    flex: 1; /* Sidebar takes up 1/2 of available space */
-    padding: 20px; /* Add padding for spacing */
+  /* .sidebar {
+    flex: 1; 
+    padding: 20px; 
     width: 15%;
 
-  }
+  } */
   
   .content {
     flex: 4; /* Content takes up 1/2 of available space */
@@ -71,4 +78,17 @@ body {
   h3{
     text-align: center;
   }
-  
+  @media (max-width: 767.98px){
+    .firstname{
+      margin-left: 0;
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .referralcode{
+      font-weight: 500;
+      font-size: 15px;
+    }
+    .sidebar{
+      width: 40%;
+    }
+  }

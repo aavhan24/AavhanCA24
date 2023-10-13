@@ -196,6 +196,9 @@ body {
   transform: translateY(-50%) rotate(-135deg);
 }
 @media (max-width: 767.98px) {
+  body{
+    z-index: -3;
+  }
   .aboutaavhan{
     display: flex;
   }

@@ -10,6 +10,9 @@
   .hamburger{
     color: white;
   }
+  #login{
+    color: white;
+  }
   .aavhanhead{
     /* height: 30px; */
     height: 50%;
@@ -70,6 +73,9 @@ a:hover{
 }
 /* Add this media query to target small screen sizes */
 @media (max-width: 767.98px) {
+  #hamburger{
+    z-index: 6;
+  }
   #aavhanlogo{
     height: 60px;
     width: 60px;
@@ -109,9 +115,9 @@ a:hover{
   .fa-1x {
     font-size: 1.5rem;
   }
-  .navbar-toggler.toggler-example {
+  /* .navbar-toggler.toggler-example {
     cursor: pointer;
-  }
+  } */
   /* .dark-blue-text {
     color: #0A38F5; 
   }

@@ -30,7 +30,7 @@ export class ForgotpasswordComponent {
     console.log(this.email);
     
    // Send a request to your backend API to trigger the email sending process
-    this.http.post('http://localhost:9992/sendotp', {email: this.email}).subscribe(
+    this.http.post('http://pukar.aavhan.org/sendotp', {email: this.email}).subscribe(
       (response: any) => {
         console.log(this.email);
         
