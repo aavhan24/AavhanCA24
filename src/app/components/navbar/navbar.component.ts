@@ -41,4 +41,13 @@ export class NavbarComponent {
     console.log(this.isLoggedIn)
     this.registrationData = this.UserDataService.registrationData;
   }
+  isMenuOpen: boolean = false; // Flag to track if the menu is open
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen; // Toggle the menu flag
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false; // Close the menu
+  }
 }

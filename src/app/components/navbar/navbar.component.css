@@ -73,6 +73,14 @@ a:hover{
 }
 /* Add this media query to target small screen sizes */
 @media (max-width: 767.98px) {
+  .nav-item{
+    z-index: 6;
+  }
+  /* .navbar-nav{
+    position: fixed;
+    z-index: +7;
+  }
+  */
   #hamburger{
     z-index: 6;
   }
@@ -98,7 +106,7 @@ a:hover{
       top: 55px; /* Adjust the distance from the top */
       right: 0; /* Align the dropdown to the right */
       width: 100%;
-      display: none; /* Hide the dropdown initially */
+      /* display: none;  */
     }
 /*   
     .navpro ul.show {
@@ -110,6 +118,9 @@ a:hover{
       margin: 0; /* Reset margin for stacked items */
       width: 100%; /* Make each item full width */
       text-align: center; /* Center-align text */
+    }
+    .nav-item{
+      background-color: #0d005d;
     }
   }
   .fa-1x {
