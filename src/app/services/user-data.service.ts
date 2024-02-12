@@ -13,7 +13,7 @@ export class UserDataService {
   constructor(private http: HttpClient) { }
   getUserDataByEmail(email:string):Observable<any>{
     //return this.http.get<any>(`http://localhost:9992/userdata/${email}`)
-    return this.http.get<any>(`http://pukar.aavhan.org/userdata`)
+    return this.http.get<any>(`ie7asvnm318sd7em41cs8if1n8.ingress.eu-west.spheron.wiki/userdata`)
   }
 
   setUser(data:any){

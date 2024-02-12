@@ -30,7 +30,7 @@ export class ForgotpasswordComponent {
     console.log(this.email);
     
    // Send a request to your backend API to trigger the email sending process
-    this.http.post('http://pukar.aavhan.org/sendotp', {email: this.email}).subscribe(
+    this.http.post('ie7asvnm318sd7em41cs8if1n8.ingress.eu-west.spheron.wiki/sendotp', {email: this.email}).subscribe(
       (response: any) => {
         console.log(this.email);
         
@@ -73,7 +73,7 @@ togglechangepasswoord(){
 changepassword(){
   console.log(this.newPassword);
   if(this.newPassword.trim()!==''){
-  this.http.post('http://pukar.aavhan.org/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
+  this.http.post('ie7asvnm318sd7em41cs8if1n8.ingress.eu-west.spheron.wiki/changepassword', {email: this.email, newPassword:this.newPassword}).subscribe(
     (response: any)=>{
       console.log('Password changed successfully',response);
       alert("Password changed successfully")

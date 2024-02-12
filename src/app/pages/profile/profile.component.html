@@ -28,13 +28,11 @@
         <p >
           Referral Code:
           <br>
-          <!-- <p id="referralcode" class="referralcode">{{registrationData.referralcode}}erfgvbhgtfrcvgbhy</p> -->
           <p class="referralcode">{{registrationData.referralcode}}</p>
 
         
        
         <p></p>
-        <!-- Add more details here -->
       </div>
       
     </div>
@@ -66,6 +64,70 @@ Aavhan Half Marathon: Earn a remarkable 25 points every participant that signs u
     
   </div>
   
+  
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Nav Bar</title>
+  <link rel="stylesheet" href="profile.component.css">
+  <style>
+    /* Add your custom styles here */
+    .announcement {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 10px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your existing code here -->
+
+  <div class="announcement">
+    <h3>Important Announcement</h3>
+    <p>This is a longer announcement that provides important information. Please read carefully.</p>
+    
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button>More Info</button>
+      <div class="dropdown-content">
+        <p>This is additional information about the announcement.</p>
+        <p>Click on different options for more details.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rest of your content -->
   
 </body>
 </html>
